@@ -1,0 +1,120 @@
+Documentation: ASPIRE10X Real-Time RDF Knowledge Graph Platform
+
+Overview
+
+The Real-Time RDF Knowledge Graph Platform is a cloud-based application hosted on Azure, designed to manage and visualize RDF data. It provides tools to interact with semantic data sourced from DrugBank, UniProt, and Disease Ontology databases, enabling advanced knowledge graph exploration for various biomedical applications.
+
+Key Features
+
+Data Integration: Supports RDF data ingestion from multiple biomedical databases.
+
+Knowledge Graph Visualization: Interactive visualizations of relationships and entities.
+
+Query Capability: Execute SPARQL queries to retrieve specific data subsets.
+
+Cloud-Based Deployment: Ensures high availability and scalability.
+
+Containerized Architecture: Built with Docker, enabling portability and ease of deployment.
+
+Prerequisites
+
+Web Browser: A modern browser like Chrome, Firefox, or Edge.
+
+Access Link: https://rdf-app-web.azurewebsites.net.
+
+Account/Access Credentials (if required): Ensure you have the necessary credentials if the platform is secured.
+
+How to Use the Platform
+
+1. Access the Application
+
+Open a web browser and navigate to https://rdf-app-web.azurewebsites.net.
+
+If prompted, log in with your credentials.
+
+2. Upload RDF Data
+
+Go to the Data Upload section.
+
+Click the Upload File button.
+
+Select your RDF data file (.rdf, .ttl, or .xml format).
+
+Confirm the upload and wait for the data to be processed.
+
+3. Explore the Knowledge Graph
+
+Navigate to the Graph Explorer tab.
+
+Use the search bar to find entities, relationships, or keywords.
+
+Interact with the visualized graph:
+
+Click nodes to expand related entities.
+
+Hover over edges to see relationship details.
+
+4. Run SPARQL Queries
+
+Go to the Query Editor section.
+
+Enter your SPARQL query in the provided text box.
+
+Click Run Query to execute.
+
+View the results in the tabular format below the editor.
+
+5. Download Processed Data
+
+After executing queries or exploring data, download results via the Export button.
+
+Choose your desired format (CSV, JSON, or XML).
+
+Technical Details
+
+Technology Stack
+
+Backend: Python (FastAPI or Flask) with RDFLib for RDF data processing.
+
+Frontend: ReactJS or similar JavaScript framework for interactive UI.
+
+Database: Triple store database (e.g., Virtuoso, Blazegraph, or Jena).
+
+Containerization: Docker used for creating portable containers.
+
+CI/CD Pipeline: Automated deployment with GitHub Actions or Azure DevOps.
+
+System Requirements
+
+The platform is optimized for Azure services and requires no local setup for end users. Developers maintaining the platform need:
+
+Docker installed locally.
+
+Azure CLI for deployment and updates.
+
+Troubleshooting
+
+Platform Not Loading:
+
+Check your internet connection.
+
+Ensure the platform link (https://rdf-app-web.azurewebsites.net) is correct.
+
+SPARQL Query Errors:
+
+Validate the syntax of your SPARQL query.
+
+Ensure the uploaded RDF data contains the queried entities.
+
+Data Upload Issues:
+
+Ensure your file is in the correct format.
+
+Check for file size limitations.
+
+Contact and Support
+
+For technical support or issues, please contact the administrator.
+
+Email: sharmar@aspire10x.com
+
